@@ -1,6 +1,6 @@
 (defproject lein-oracle-repository "0.1.0-SNAPSHOT"
   :description "A leiningen plugin for accessing oracle repository."
-  :url "https://github.com/FIXME"
+  :url "https://github.com/hkorpi/lein-oracle-repository"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
 
