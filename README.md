@@ -30,7 +30,7 @@ The simplest option is to add this information in plain text to `~/.lein/profile
 
 All possible options (e.g. encryption) are defined in <https://github.com/technomancy/leiningen/blob/stable/doc/DEPLOY.md#authentication>
 
-Add this plugin `[oracle-repository "0.1.0-SNAPSHOT"]` into the project `:plugins` vector.
+Add this plugin `[lein-oracle-repository "0.1.0-SNAPSHOT"]` into the project `:plugins` vector.
 
 Note: you cannot load leiningen plugins from the oracle repository 
 if these plugins are defined in the same `:plugins` vector as this plugin.
