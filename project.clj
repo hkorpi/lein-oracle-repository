@@ -1,4 +1,4 @@
-(defproject lein-oracle-repository "0.1.0-SNAPSHOT"
+(defproject lein-oracle-repository "0.1.0"
   :description "A leiningen plugin for accessing oracle repository."
   :url "https://github.com/hkorpi/lein-oracle-repository"
   :license {:name "Eclipse Public License"

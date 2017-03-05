@@ -2,7 +2,7 @@
 
 A Leiningen plugin for connecting to the oracle maven repository.
 
-[Oracle maven repository] contains oracle closed source components e.g. oracle jdbc drivers.
+[Oracle maven repository][oracle-repository] contains oracle closed source components e.g. oracle jdbc drivers.
 
 The problem of this repository is that
  - It requires authentication using OTN user account
@@ -13,16 +13,20 @@ Oracle calls this enterprise-grade SSO solution, which actually means unnecessar
 The authentication requires special tweaks to HTTPWagon see <http://docs.oracle.com/middleware/1213/core/MAVEN/config_maven_repo.htm#MAVEN9015>.
 
 This leiningen plugin provides a special repository protocol `oam11g`. 
-This protocol uses a configured HTTPWagon, which can access to oracle repository.
+This protocol uses a configured HTTPWagon, which can access to the oracle repository.
 
 ## Usage
 
 You have to be familiar with basic concepts in [leiningen].
 
-Add oracle repository definition: `["oracle" {:url "oam11g://maven.oracle.com"}]` 
-into the `:repositories` vector. 
+Add this plugin (definition below) into the project `:plugins` vector.
 
-Add OTN account authentication information i.e. user name and password. 
+[![Clojars Project](http://clojars.org/lein-oracle-repository/latest-version.svg)](http://clojars.org/lein-oracle-repository)
+
+Add oracle repository definition: `["oracle" {:url "oam11g://maven.oracle.com"}]` 
+into the project `:repositories` vector. 
+
+Add OTN account authentication information i.e. a user name and a password. 
 The simplest option is to add this information in plain text to `~/.lein/profiles.clj` e.g.
 
 `{:auth {:repository-auth {#"oracle" {:username "scott"
@@ -30,7 +34,7 @@ The simplest option is to add this information in plain text to `~/.lein/profile
 
 All possible options (e.g. encryption) are defined in <https://github.com/technomancy/leiningen/blob/stable/doc/DEPLOY.md#authentication>
 
-Add this plugin `[lein-oracle-repository "0.1.0-SNAPSHOT"]` into the project `:plugins` vector.
+Instructions to OTN account registration can be found from [here][oracle-repository].
 
 Note: you cannot load leiningen plugins from the oracle repository 
 if these plugins are defined in the same `:plugins` vector as this plugin.
@@ -41,5 +45,5 @@ Copyright © 2017 Mika
 
 Distributed under the Eclipse Public License version 1.0.
 
-[Oracle maven repository]: https://maven.oracle.com/
+[oracle-repository]: https://maven.oracle.com/
 [leiningen]: https://leiningen.org/
