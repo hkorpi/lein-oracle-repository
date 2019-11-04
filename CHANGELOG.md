@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.2.0] - 2019-11-04
+
+Support for leiningen 2.9.x.
+
 ## [0.1.0] - 2017-03-05
 ### Added
 - First release
@@ -23,3 +27,4 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 [Unreleased]: https://github.com/hkorpi/lein-oracle-repository/compare/0.1.0...HEAD
 [0.1.0]: https://github.com/hkorpi/lein-oracle-repository/tree/0.1.0
+[0.2.0]: https://github.com/hkorpi/lein-oracle-repository/tree/0.2.0

@@ -36,8 +36,19 @@ All possible options (e.g. encryption) are defined in <https://github.com/techno
 
 Instructions to OTN account registration can be found from [here][oracle-repository].
 
-Note: you cannot load leiningen plugins from the oracle repository 
+:warning: You cannot load leiningen plugins from the oracle repository 
 if these plugins are defined in the same `:plugins` vector as this plugin.
+
+:warning: Latest version is compatible only with specific leiningen version. See leiningen version support section.
+
+## Leiningen version support
+
+Leiningen versions and a compatible plugin version is listed in the table below .
+
+| Leiningen    | Plugin  | 
+| -------------|---------| 
+| 2.9.x        | 0.2.0   |
+| before 2.9.0 | 0.1.0   |
 
 ## License
 

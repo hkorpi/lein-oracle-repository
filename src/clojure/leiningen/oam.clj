@@ -1,5 +1,5 @@
 (ns leiningen.oam
-  (:import (org.apache.maven.wagon.providers.http BasicAuthScope HttpMethodConfiguration HttpConfiguration)
+  (:import (org.apache.maven.wagon.shared.http BasicAuthScope HttpMethodConfiguration HttpConfiguration)
            (org.apache.maven.wagon.providers.oam OAMWagon)))
 
 (defn create-oam11g-wagon []
