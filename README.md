@@ -7,8 +7,6 @@ A Leiningen plugin for connecting to the oracle maven repository.
 The problem of this repository is that
  - It requires authentication using OTN user account
  - The authentication is implemented using Oracle Access Management product (OAM)
- 
-Oracle calls this enterprise-grade SSO solution, which actually means unnecessary complicated bullshit.
 
 The authentication requires special tweaks to HTTPWagon see <http://docs.oracle.com/middleware/1213/core/MAVEN/config_maven_repo.htm#MAVEN9015>.
 
@@ -39,7 +37,7 @@ Instructions to OTN account registration can be found from [here][oracle-reposit
 :warning: You cannot load leiningen plugins from the oracle repository 
 if these plugins are defined in the same `:plugins` vector as this plugin.
 
-:warning: Latest version is compatible only with specific leiningen version. See leiningen version support section.
+:warning: Latest version is compatible only with specific leiningen version. See leiningen version support section below.
 
 ## Leiningen version support
 
